@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to one more frontend challenge! Feel free to check out my previous challenges =D">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/public/favicon.png"
+      type="image/png"
+    />
+    <title>FCFSM | GC</title>
+  </head>
+  <body>
+    <header>
+      <p>Reliable, efficient delivery <em>Powered by Technology</em></p>
+      <small
+        >Our Artificial Intelligence powered tools use millions of project data
+        points to ensure that your project is successful</small
+      >
+    </header>
+
+    <main>
+      <div class="Supervisor">
+        <h3>Supervisor</h3>
+        <p>Monitors activity to identify project roadblocks</p>
+        <img src="./assets/public/icon-supervisor.svg" alt="Supervisor" />
+      </div>
+
+      <div class="TeamBuilder">
+        <h3>Team Builder</h3>
+        <p>
+          Scans our talent network to create the optimal team for your project
+        </p>
+        <img src="./assets/public/icon-team-builder.svg" alt="Team Builder" />
+      </div>
+
+      <div class="Karma">
+        <h3>Karma</h3>
+        <p>Regularly evaluates our talent to ensure quality</p>
+        <img src="./assets/public/icon-karma.svg" alt="Karma" />
+      </div>
+
+      <div class="Calculator">
+        <h3>Calculator</h3>
+        <p>Uses data from past projects to provide better delivery estimates</p>
+        <img src="./assets/public/icon-calculator.svg" alt="Calculator" />
+      </div>
+    </main>
+
+    <footer>
+      <section>
+        <p>
+          Hey! Thank you for checking my solution 🤗. I hope you like it. Don't forget to check
+          <a href="https://portfolio-gabrielcrispim.vercel.app/" target="_blank"
+            >my portfolio</a>!😊
+        </p>
+
+        <p>
+          Challenged by
+          <a href="https://www.frontendmentor.io/?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >.
+        </p>
+        <span>✖</span>
+      </section>
+
+      <div class="shadow"></div>
+    </footer>
+
+    <script>
+      const footer = document.querySelector("footer");
+      const shadow = document.querySelector(".shadow");
+      const CloseIcon = document.querySelector("span");
+      const ExitPopUp = [shadow, CloseIcon];
+
+      ExitPopUp.forEach((e) => {
+        e.addEventListener("click", () => {
+          footer.style.display = "none";
+        });
+      });
+    </script>
+  </body>
+</html>
