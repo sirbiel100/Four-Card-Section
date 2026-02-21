@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Check here](https://your-solution-url.com)
-- Live Site URL: [Click here](https://your-live-site-url.com)
+- Solution URL: [Check here](https://github.com/sirbiel100/Four-Card-Section)
+- Live Site URL: [Click here](https://sirbiel100.github.io/Four-Card-Section/)
 
 ## My process
 
