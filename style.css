@@ -19,7 +19,7 @@ body {
   place-items: center;
   gap: 4em;
   padding: 4em 2.5em;
-  background: hsl(0, 0%, 100%);
+  background: #f1f1f1;
   font-family: "Poppins", sans-serif;
 }
 
@@ -67,7 +67,7 @@ main div {
   width: 22em;
   border-top: 4px solid green;
   border-radius: 0.5em;
-  box-shadow: 0 1em 1em 0 rgba(55, 44, 101, 0.1568627451);
+  box-shadow: 0 1em 1em 0 rgba(35, 16, 108, 0.1568627451);
 }
 main div h3 {
   color: hsl(234, 12%, 34%);
@@ -133,11 +133,18 @@ footer .shadow {
 }
 
 @media screen and (min-width: 72em) {
+  body {
+    padding: 0;
+    gap: 0;
+  }
   header {
-    max-width: 34em;
+    max-width: 42em;
   }
   header p {
-    font-size: 2.4rem;
+    font-size: 3rem;
+  }
+  header small {
+    font-size: 1.2rem;
   }
   main {
     display: grid;
@@ -150,7 +157,10 @@ footer .shadow {
   main div {
     transition: transform 200ms, box-shadow 200ms ease-in-out;
     height: 19em;
-    width: 28em;
+    width: 29em;
+  }
+  main div p {
+    font-size: 1.1rem;
   }
   main div img {
     scale: 1;

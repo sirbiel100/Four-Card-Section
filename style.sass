@@ -28,7 +28,7 @@ body
     place-items: center
     gap: 4em
     padding: 4em 2.5em
-    background: $Neutral_White
+    background: #f1f1f1
     font-family: 'Poppins', sans-serif
 
 header, main
@@ -68,7 +68,7 @@ main
         width: 22em
         border-top: 4px solid green
         border-radius: .5em
-        box-shadow: 0 1em 1em 0 #372c6528
+        box-shadow: 0 1em 1em 0 #23106c28
         h3
             color: $Neutral_Grey_500
             font-size: clamp(1.4rem, 1.68rem, 1.8rem)
@@ -121,11 +121,16 @@ footer
         display: none
 
 
-@media screen and (min-width: 72em) 
+@media screen and (min-width: 72em)
+    body
+        padding: 0
+        gap: 0
     header
-        max-width: 34em
+        max-width: 42em
         p
-            font-size: 2.4rem
+            font-size: 3rem
+        small
+            font-size: 1.2rem
     main
         display: grid
         grid-template-areas: ". teamBuilder ." "supervisor . calculator" ". karma ."
@@ -135,7 +140,9 @@ footer
         div
             transition: transform 200ms, box-shadow 200ms ease-in-out
             height: 19em
-            width: 28em
+            width: 29em
+            p
+                font-size: 1.1rem
             img
                 scale: 1
                 transform: translate(-150%, -140%)
