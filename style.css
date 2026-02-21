@@ -169,9 +169,8 @@ footer .shadow {
     grid-area: calculator;
   }
   footer {
-    opacity: 0;
+    display: none;
     background: transparent;
-    animation: fadein 20s ease-in-out;
   }
   footer section {
     position: absolute;
@@ -200,14 +199,6 @@ footer .shadow {
     background: rgba(0, 0, 0, 0.3803921569);
     width: 100dvw;
     height: 100dvh;
-  }
-  @keyframes fadein {
-    1% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
   }
 }
 @media screen and (hover: hover) and (pointer: fine) {
