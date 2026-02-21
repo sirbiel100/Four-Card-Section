@@ -148,8 +148,9 @@ footer
         .Calculator
             grid-area: calculator
     footer
+        opacity: 0
         background: transparent
-        animation: fadein 300ms ease-in-out
+        animation: fadein 20s ease-in-out
         section
             position: absolute
             left: 50%
@@ -177,10 +178,11 @@ footer
             width: 100dvw
             height: 100dvh
 
+    // The animation bellow is just for screenshot preview matter
     @keyframes fadein 
-        from 
-            opacity: 0
-        to
+        1%
+            opacity: 1
+        100%
             opacity: 1
     
 
