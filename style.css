@@ -15,11 +15,13 @@ html, body {
 }
 
 body {
-  display: grid;
-  place-items: center;
-  gap: 4em;
-  padding: 4em 2.5em;
-  background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #fcfcfc;
+  padding: 1em;
+  gap: 1em;
   font-family: "Poppins", sans-serif;
 }
 

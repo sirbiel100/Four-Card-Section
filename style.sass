@@ -24,11 +24,13 @@ html, body
     min-height: 100dvh
 
 body
-    display: grid
-    place-items: center
-    gap: 4em
-    padding: 4em 2.5em
-    background: #f1f1f1
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-evenly
+    background: #fcfcfc
+    padding: 1em
+    gap: 1em
     font-family: 'Poppins', sans-serif
 
 header, main
@@ -105,21 +107,20 @@ footer
         display: flex
         flex-direction: column
         gap: 2em
-        p 
+        p
             font-size: 1.4rem
             color: $Neutral_Grey_500
             line-height: 1.7
             text-align: center
-        span 
+        span
             position: absolute
             left: 100%
             top: 100%
             font-size: 2rem
             color: #f44d4d
             transform: translate(-200%, -200%)
-    .shadow 
+    .shadow
         display: none
-
 
 @media screen and (min-width: 72em)
     body
@@ -133,7 +134,7 @@ footer
             font-size: 1.2rem
     main
         display: grid
-        grid-template-areas: ". teamBuilder ." "supervisor . calculator" ". karma ."
+        grid-template-areas: ".teamBuilder ." "supervisor .calculator" ".karma ."
         grid-template-rows: repeat(2, 1fr 0)
         column-gap: 2.5em
         row-gap: 1.2em
@@ -183,12 +184,10 @@ footer
             background: #00000061
             width: 100dvw
             height: 100dvh
-    
-
 
 @media screen and (hover: hover) and (pointer: fine)
     main div:hover
-        transform: translateY(-5px)
+    transform: translateY(-5px)
     .Supervisor:hover
         box-shadow: 0 1em 1em 0 #51d3ed4e
     .TeamBuilder:hover
